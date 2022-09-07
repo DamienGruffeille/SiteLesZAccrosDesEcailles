@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Métadonnées permettant le référencement dans les moteurs de recherche-->
+    <meta name="author" content="Damien Gruffeille" />
+    <meta
+      name="description"
+      content="Page de présentation de l'élevage Les z'accros des écailles, spécialisé dans le gecko à crête (Correlophus Ciliatus) mais aussi d'autres reptiles. Cet élevage est né de la rencontre de trois passionnés : David HUS, Kévin Pascal et Damien Gruffeille."
+    />
+
+    <!-- Métadonnées permettant de personnaliser l'affichage du lien du site sur FB-->
+    <meta property="og:image" content="Photos/logo.jfif" />
+    <!-- image qui s'affichera lors de-->
+    <meta
+      property="og:description"
+      content="Les z'accros des écailles - site web de l'élevage"
+    />
+
+    <title>Les z'accros des écailles</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Voici notre en‑tête principale utilisée dans toutes les pages
+          de notre site web -->
+    <header>
+      <img
+        src="Photos/logo.jfif"
+        alt="dessin représentant un gecko, logo du site"
+        width="260"
+        height="194"
+      />
+      <h1>Les z'accros des écailles</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="Main.html">Accueil</a></li>
+        <li>Les z'accros</li>
+        <li><a href="Pets.html">Les écailles</a></li>
+        <li><a href="Projects.html">Projets</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Un formulaire de recherche est une autre façon de naviguer de
+                  façon non‑linéaire dans un site. -->
+
+      <form>
+        <input type="search" name="q" placeholder="Rechercher" />
+        <input type="submit" value="Lancer !" />
+      </form>
+    </nav>
+
+    <!-- Ici nous mettons le contenu de la page -->
+    <main>
+      <!-- Il contient un article -->
+      <article>
+        <h2>Présentation des z'accros des écailles</h2>
+
+        <h3>David HUSS</h3>
+        <img src="Photos/David.jpg" />
+        <p>
+          Point central de la rencontre des 3 individus, son expérience profite
+          à tout le monde.
+        </p>
+        <p>Sous ses airs de bad boy se cache un homme fiable et sympathique.</p>
+
+        <h3>Kevin PASCAL</h3>
+        <img src="Photos/Kevin.jfif" />
+        <p>
+          Ancien joueur pro CS, il s'est découvert un nouveau hobby : les
+          reptiles.
+        </p>
+        <p>
+          Homme très abordable et sympathique, il fait parfois preuve
+          d'impatience (ou d'abnégation selon le point de vue ;) ).
+        </p>
+
+        <h3>Damien GRUFFEILLE</h3>
+        <img src="Photos/damien.jpg" />
+        <p>Le 3ème laron de la bande.</p>
+        <p>Mr ICE. Non promis, je ne mords pas !</p>
+      </article>
+
+      <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
+            principal -->
+      <aside>
+        <h2>Fiches d'élevage</h2>
+        <ul>
+          <li><a href="#">Gecko à crête</a></li>
+          <li><a href="#">Gecko tokay</a></li>
+          <li><a href="#">Gecko léopard</a></li>
+          <li><a href="#">Phelsuma lineata</a></li>
+          <li><a href="#">Et bien d'autres…</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+    <footer>
+      <p>©Copyright 2050 par DamienG.Dev. Tous droits reservés.</p>
+    </footer>
+  </body>
+</html>
