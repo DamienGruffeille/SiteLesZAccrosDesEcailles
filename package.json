@@ -4,8 +4,13 @@
   "description": "site internet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:md": "npx markdownlint **/*.md"
   },
   "author": "damien",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "markdownlint": "^0.26.2",
+    "markdownlint-cli": "^0.32.2"
+  }
 }

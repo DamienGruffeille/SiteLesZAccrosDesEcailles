@@ -1,20 +1,23 @@
 body,
 html {
-  background-color: rgb(69, 117, 69);
+  /* background-color: rgb(69, 117, 69); */
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
 }
 
+aside {
+  background-image: url(Photos/cadre-jungle-vierge_1639-5070.jpg);
+}
+
 header {
   display: flex;
-  height: 194px;
+  height: 12em;
   background-image: linear-gradient(
-      rgba(121, 197, 146, 0.664),
-      rgba(90, 139, 57, 0.25)
+      rgba(86, 132, 44, 0.664),
+      rgba(27, 67, 14, 0.25)
     ),
     url("Photos/logo.jfif");
-  align-content: center;
 }
 
 nav {

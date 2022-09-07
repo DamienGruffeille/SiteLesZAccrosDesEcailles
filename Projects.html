@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Métadonnées permettant le référencement dans les moteurs de recherche-->
     <meta name="author" content="Damien Gruffeille" />
     <meta
@@ -38,31 +40,39 @@
     <!-- Voici notre en‑tête principale utilisée dans toutes les pages
           de notre site web -->
     <header>
-      <img
-        src="Photos/logo.jfif"
-        alt="dessin représentant un gecko, logo du site"
-        width="260"
-        height="194"
-      />
       <h1>Les z'accros des écailles</h1>
     </header>
 
     <nav>
-      <ul>
+      <ul class="navbar">
         <li><a href="Main.html">Accueil</a></li>
-        <li><a href="Team.html">Les z'accros</a></li>
-        <li><a href="Pets.html">Les écailles</a></li>
-        <li>Projets</li>
+        <li>
+          <a href="Team.html">Les z'accros</a>
+          <ul>
+            <li><a href="#">David</a></li>
+            <li><a href="#">Kevin</a></li>
+            <li><a href="#">Damien</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="Pets.html">Les écailles</a>
+          <ul>
+            <li><a href="#">Reptiles</a></li>
+            <li><a href="#">Amphibiens</a></li>
+            <li><a href="#">Arthropodes</a></li>
+          </ul>
+        </li>
+        <li><a href="Projects.html">Projets</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </ul>
 
       <!-- Un formulaire de recherche est une autre façon de naviguer de
                   façon non‑linéaire dans un site. -->
 
-      <form>
-        <input type="search" name="q" placeholder="Rechercher" />
-        <input type="submit" value="Lancer !" />
-      </form>
+      <!-- <form>
+              <input type="search" name="q" placeholder="Rechercher" />
+              <input type="submit" value="Lancer !" />
+            </form> -->
     </nav>
 
     <!-- Ici nous mettons le contenu de la page -->

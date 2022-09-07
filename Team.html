@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Métadonnées permettant le référencement dans les moteurs de recherche-->
     <meta name="author" content="Damien Gruffeille" />
     <meta
@@ -38,20 +40,28 @@
     <!-- Voici notre en‑tête principale utilisée dans toutes les pages
           de notre site web -->
     <header>
-      <img
-        src="Photos/logo.jfif"
-        alt="dessin représentant un gecko, logo du site"
-        width="260"
-        height="194"
-      />
       <h1>Les z'accros des écailles</h1>
     </header>
 
     <nav>
-      <ul>
+      <ul class="navbar">
         <li><a href="Main.html">Accueil</a></li>
-        <li>Les z'accros</li>
-        <li><a href="Pets.html">Les écailles</a></li>
+        <li>
+          <a href="Team.html">Les z'accros</a>
+          <ul>
+            <li><a href="#">David</a></li>
+            <li><a href="#">Kevin</a></li>
+            <li><a href="#">Damien</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="Pets.html">Les écailles</a>
+          <ul>
+            <li><a href="#">Reptiles</a></li>
+            <li><a href="#">Amphibiens</a></li>
+            <li><a href="#">Arthropodes</a></li>
+          </ul>
+        </li>
         <li><a href="Projects.html">Projets</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </ul>
@@ -59,10 +69,10 @@
       <!-- Un formulaire de recherche est une autre façon de naviguer de
                   façon non‑linéaire dans un site. -->
 
-      <form>
-        <input type="search" name="q" placeholder="Rechercher" />
-        <input type="submit" value="Lancer !" />
-      </form>
+      <!-- <form>
+              <input type="search" name="q" placeholder="Rechercher" />
+              <input type="submit" value="Lancer !" />
+            </form> -->
     </nav>
 
     <!-- Ici nous mettons le contenu de la page -->
@@ -72,7 +82,7 @@
         <h2>Présentation des z'accros des écailles</h2>
 
         <h3>David HUSS</h3>
-        <img src="Photos/David.jpg" />
+        <img src="Photos/David.jpg" alt="Photo de la tronche de David HUSS" />
         <p>
           Point central de la rencontre des 3 individus, son expérience profite
           à tout le monde.
@@ -80,7 +90,7 @@
         <p>Sous ses airs de bad boy se cache un homme fiable et sympathique.</p>
 
         <h3>Kevin PASCAL</h3>
-        <img src="Photos/Kevin.jfif" />
+        <img src="Photos/Kevin.jfif" alt="Photo de la tronche de Kévin" />
         <p>
           Ancien joueur pro CS, il s'est découvert un nouveau hobby : les
           reptiles.
@@ -91,7 +101,7 @@
         </p>
 
         <h3>Damien GRUFFEILLE</h3>
-        <img src="Photos/damien.jpg" />
+        <img src="Photos/damien.jpg" alt="Photo de la tronche de Damien" />
         <p>Le 3ème laron de la bande.</p>
         <p>Mr ICE. Non promis, je ne mords pas !</p>
       </article>
