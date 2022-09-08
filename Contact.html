@@ -65,35 +65,141 @@
         <li><a href="Projects.html">Projets</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </ul>
-
-      <!-- Un formulaire de recherche est une autre façon de naviguer de
-                  façon non‑linéaire dans un site. -->
-
-      <!-- <form>
-              <input type="search" name="q" placeholder="Rechercher" />
-              <input type="submit" value="Lancer !" />
-            </form> -->
     </nav>
 
     <!-- Ici nous mettons le contenu de la page -->
     <main>
       <!-- Il contient un article -->
-      <article>
-        <h2>Titre 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          tempora neque totam deserunt! Labore explicabo at reiciendis debitis,
-          aliquid nulla? Accusantium, enim reprehenderit. Quidem molestiae
-          repellat facilis saepe assumenda deserunt.
-        </p>
+      <article id="zoneFormulaires">
+        <div>
+          <h2>Formulaire de contact</h2>
+          <p>
+            Pour nous contacter, merci de renseigner les champs ci-dessous :
+          </p>
+          <form id="formContact" method="post" action="traitement.js">
+            <fieldset id="infos">
+              <legend>Vos informations</legend>
+              <div>
+                <label for="userName">Nom : </label>
+                <input
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  placeholder="Saisissez votre nom"
+                  title="Nom de l'utilisateur"
+                />
+                <br />
+                <br />
+                <label for="userFName">Prénom : </label>
+                <input
+                  type="text"
+                  name="userFName"
+                  id="userFName"
+                  placeholder="Saisissez votre prénom"
+                  title="Prénom de l'utilisateur"
+                />
+                <br />
+                <br />
+                <label for="userEmail">Email : </label>
+                <input
+                  type="email"
+                  name="userEmail"
+                  id="userEmail"
+                  placeholder="Saisissez votre email"
+                  title="Adresse mail de l'utilisateur"
+                  required="required"
+                />
+              </div>
 
-        <h3>titre 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a
-          labore. Corrupti dolorem eligendi odio maxime, cupiditate soluta
-          laudantium autem sunt magni facilis et, ad sequi, obcaecati
-          repellendus blanditiis exercitationem.
-        </p>
+              <div id="formConnexion">
+                <div class="label">
+                  <label for="pseudo">Identifiant : </label>
+                  <br />
+                  <label for="mdp">Mot de passe : </label>
+                </div>
+                <div id="txtZone">
+                  <input
+                    type="email"
+                    name="pseudo"
+                    id="pseudo"
+                    placeholder="Saisissez votre email"
+                    title="Pseudo de l'utilisateur"
+                  />
+                  <br />
+                  <input
+                    type="password"
+                    name="mdp"
+                    id="mdp"
+                    placeholder="Saisissez votre mot de passe"
+                    title="Mot de passe"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Votre message</legend>
+              <textarea
+                name="messageText"
+                id="messageText"
+                cols="100%"
+                rows="10"
+                title="Zone de saisie du message"
+              ></textarea>
+            </fieldset>
+
+            <fieldset id="autresOptions">
+              <legend>Options</legend>
+              <p>
+                Cochez le type de demande : <br />
+                <input
+                  type="checkbox"
+                  name="info"
+                  id="info"
+                  title="info"
+                  placeholder=""
+                  checked="true"
+                /><label for="info" title="Information">Information</label>
+                <br />
+                <input
+                  type="checkbox"
+                  name="dispo"
+                  id="dispo"
+                  title="dispo"
+                  placeholder=""
+                /><label for="dispo" title="Disponibilités"
+                  >Demande de disponibilités</label
+                >
+                <br />
+                <input
+                  type="checkbox"
+                  name="autre"
+                  id="autre"
+                  title="autre"
+                  placeholder=""
+                /><label for="autre" title="autre">Autre type de demande</label>
+                <br />
+              </p>
+              <p>
+                <label for="espece">Sélectionnez l'espèce concernée : </label
+                ><br />
+                <select name="espece" id="espece">
+                  <option value="vide"></option>
+                  <optgroup label="Reptiles">
+                    <option value="tokay">Gecko tokay</option>
+                    <option value="geckoACrete">Gecko à crète</option>
+                  </optgroup>
+                  <optgroup label="Grenouilles">
+                    <option value="leuco">Dendrobate leucomelas</option>
+                    <option value="pacman">Grenouille pacman</option>
+                  </optgroup>
+                </select>
+              </p>
+            </fieldset>
+
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
       </article>
 
       <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
