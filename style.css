@@ -1,3 +1,24 @@
+@media all and (orientation: portrait) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+  }
+}
+
 body,
 html {
   /* background-color: rgb(69, 117, 69); */
@@ -7,35 +28,50 @@ html {
 }
 
 body {
+  /* background-image: linear-gradient(
+    rgba(25, 25, 25, 0.25),
+    url(Photos/cadre-jungle-vierge_1639-5070.jpg)
+  ); */
+  background-image: linear-gradient(
+      rgba(86, 132, 44, 0.664),
+      rgba(27, 67, 14, 0.25)
+    ),
+    url("Photos/cadre-jungle-vierge_1639-5070.jpg");
   display: flex;
   flex-direction: column;
 }
 
 main {
-  display: inline-block;
-  vertical-align: top;
-  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
 }
 
 article {
+  background-color: rgba(101, 158, 82, 0.5);
+  margin-top: 10px;
   padding-left: 5px;
   display: inline-block;
   vertical-align: top;
   border: 1px solid black;
   border-radius: 5px 5px;
-  width: 80%;
-  height: 40em;
+  width: 60em;
+  height: fit-content;
   box-shadow: 2px 2px 2px 2px #444444;
 }
 
 aside {
+  background-color: rgba(101, 158, 82, 0.5);
   display: inline-block;
   vertical-align: top;
-  background-image: url(Photos/cadre-jungle-vierge_1639-5070.jpg);
+  /* background-image: url(Photos/cadre-jungle-vierge_1639-5070.jpg); */
   border: 1px solid black;
   border-radius: 5px 5px;
-  width: 19%;
-  height: 40em;
+  margin-right: 10px;
+  margin-top: 10px;
+  min-width: 100px;
+  width: fit-content;
+  height: 640px;
   box-shadow: 2px 2px 2px 2px #444444;
 }
 
@@ -43,13 +79,13 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: space-between;
-  height: 12em;
-  background-image: linear-gradient(
+  justify-content: center;
+  height: fit-content;
+  /* background-image: linear-gradient(
       rgba(86, 132, 44, 0.664),
       rgba(27, 67, 14, 0.25)
     ),
-    url("Photos/logo.jfif");
+    url("Photos/logo.jfif"), no-repeat; */
 }
 
 header form {
@@ -96,6 +132,10 @@ header h1 {
 #autresOptions p {
   display: flex;
   flex-direction: row;
+}
+
+#sendButton {
+  margin: 10px 10px 10px 10px;
 }
 
 /* Barre de navigation */
@@ -163,7 +203,7 @@ a:hover {
   background-color: #a3a1a1;
 }
 .navbar a.actif {
-  background-color: lime;
+  background-color: #9e9b9b;
 }
 
 .plsArticle {
